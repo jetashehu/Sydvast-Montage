@@ -1,123 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sydvastmontage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Libre+Baskerville:wght@700&family=Rajdhani:wght@500&family=Roboto+Flex:wght@200&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Libre+Baskerville:wght@700&family=Rajdhani:wght@500&family=Roboto+Flex:wght@200&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-
-    <div>
-        <video id="bg-video" src="./images/bgVideo.mp4" width="500" autoplay muted></video>
-      </div>
-
-     <!-- <div class="container-fluid navbar ">
-        <div class="row">
-           <div class="col-10 col-sm-8 col-md-8 col-lg-4 col-xl-4">
-            <img src="./images/logo.jpg" id="logo" alt="">
-           </div>
-           <div class="col-2 col-sm-4 col-md-8 col-lg-8 col-xl-8 navbar-list">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="navbar-link"  href="#"><span class="item">Home</span> </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="navbar-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="item">Produkter</span>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                  <a class="navbar-link"  href="#"><span class="item">Service</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbar-link"  href="#"><span class="item">Om oss</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="navbar-link"  href="#"><span class="item">Kontakta oss</span></a>
-                </li>
-                
-          
-              </ul>
-           </div>
+  <div>
+    <video id="bg-video" src="./images/bgVideo.mp4" width="500" autoplay  loop muted></video>
+  </div>
+  <nav class="navbar">
+    <div id="logo">
+      <img id="logo1" src="./images/logo1.jpg" alt="LOGO">
+    </div>
+    <div class="push-left">
+      <button id="menu-toggler" data-class="menu-active" class="hamburger">
+        <span class="hamburger-line hamburger-line-top"></span>
+        <span class="hamburger-line hamburger-line-middle"></span>
+        <span class="hamburger-line hamburger-line-bottom"></span>
+      </button>
+      <!--  Menu compatible with wp_nav_menu  -->
+    </div>
+    <div class="nav-menu-1">
+      <ul id="primary-menu" class="menu nav-menu">
+        <li class="menu-item current-menu-item">
+          <a class="nav__link" href="./index.html">Hem</a>
+        </li>
+        <li class="menu-item dropdown">
+          <a class="nav__link" href="./product.html">Produkter</a>
+        </li>
+        <li class="menu-item dropdown">
+          <a class="nav__link" href="./services.html">Våra tjänster</a>
+        </li>
+        <li class="menu-item dropdown">
+          <a class="nav__link" href="./aboutus.html">Om oss</a>
+        </li>
+        <li class="menu-item ">
+          <a class="nav__link " href="./contact.html">Kontakta oss</a>
+        </li>
+      </ul>
+    </div>
+    <div class="kalkylator">
+      <button class="kalk-btn"><a href="./kalkulator.html">Boka konsultation</a> </button>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row main">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mainLeft">
+        <div class="mainLeftTxt" data-aos="fade-right">
+          <div id="mainP1">
+            <span id="mainp1">
+              <h1>Välkommen</h1>
+            </span>
+          </div>
+          <div id="mainP2">
+            <span id="mainp2">
+              <h1>till en grönare värld</h1>
+            </span>
+          </div>
         </div>
-     </div> -->
-
-     <nav class="navbar">
-      <div id="logo"><img src="./images/logo.jpg" alt="LOGO"></div>
-      <div class="push-left">
-        <button id="menu-toggler" data-class="menu-active" class="hamburger">
-          <span class="hamburger-line hamburger-line-top"></span>
-          <span class="hamburger-line hamburger-line-middle"></span>
-          <span class="hamburger-line hamburger-line-bottom"></span>
-        </button>
-    
-        <!--  Menu compatible with wp_nav_menu  -->
-        <ul id="primary-menu" class="menu nav-menu">
-          <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Home</a></li>
-          <li class="menu-item dropdown"><a class="nav__link"  href="#">About</a>
-             <ul class="sub-nav" >
-              <li><a class="sub-nav__link" href="#">link 1</a></li>
-              <li><a class="sub-nav__link" href="#">link 2</a></li>
-              <li><a class="sub-nav__link" href="#">link 3 - long link - long link - long link</a></li>
-            </ul>
-    
-          </li>
-          <li class="menu-item dropdown"><a class="nav__link"  href="#">Contact</a>
-            
-          </li>
-          <li class="menu-item "><a class="nav__link"  href="#">Blog</a>
-           
-          </li>
-        </ul>
-    
-    
       </div>
-      <!-- <div><button>kalkylator</button></div> -->
-    </nav>
-    
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 buton">
+        <div class="buttons">
+          <button class="quote" role="button">
+            <a href="./contact.html">Kontakta oss</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- calculator -->
+  <div class="container-fluid calc">
+    <div class="row calculator">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  ">
+        <div class="clacText">
+          <div>
+            <h1>Ser du med förväntan fram emot den kommande elräkningen? </span>
+            </h1>
+          </div>
+          <div>
+            <p> Sannolikt inte. Det är en oundviklig utgift som många finner mindre upphetsande. Emellertid finns det en möjlighet att förändra detta. Genom att investera i solcellssystem från Sydväst Montage kan du göra din elräkning till en mer positiv och intressant upplevelse. Det låter kanske ovanligt, men faktum är att du snart kan börja se fram emot att ta emot din månatliga elräkning. Utforska vår solkalkylator för att upptäcka hur mycket mer givande och gynnsamma dina elräkningar kan bli med hjälp av solceller. </p>
+          </div>
+          <div>
+            <button id="calcBut"><a href="./kalkulator.html"> Till solcellsräknaren</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 clacImg">
+        <div>
+          <img src="./images/Bild Hemsidan.jpg" id="calcImg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- procesi punes step by step  -->
+  <div class="container-fluid process">
+    <div class="row proccesWork">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+        <div class="processTxt">
+          <div>
+            <h1>SÅ GÅR DET TILL</h1>
+          </div>
+          <div>
+            <p>Vi förstår att det kan vara mycket att tänka på med solceller. Därför har vi tagit fram en
+              steg-för-steg-guide som beskriver hur en solcellsinstallation hos en komplett helhetsleverantör går till.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row kontakt">
+      <div class="col-3 col-sm-3 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <img src="./images/icons/mail1.png" id="kontakt">
+        </div>
+      </div>
+      <div class="col-9 col-sm-9 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <h1>Kontakt</h1>
+        </div>
+        <div>
+          <p>Du kontaktar oss via telefon, mail eller kontaktformuläret</p>
+          <p id="knkParagraph" class="knkParagraph"> och bokar en kostnadsfri konsultation där våra tekniker kör ut till
+            er. </p>
+          <button id="readM" class="readMore">Läs mer...</button>
+        </div>
+      </div>
+    </div>
+    <div class="row kontakt">
+      <div class="col-3 col-sm-3 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <img src="./images/icons/planifikimiProjektit.png" id="kontakt">
+        </div>
+      </div>
+      <div class="col-9 col-sm-9 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <h1>Projektering</h1>
+        </div>
+        <div>
+          <p>Vi utför projektering genom vår duktiga tekniker som kör ut till er med sin drönare.</p>
+          <p id="knkParagraph1" class="knkParagraph"> Han kommer utföra en takinspektion för att säkerställa att taket
+            är i godtyckligt skick. Därefter kommer teknikern mäta och ta drönarbilder på ditt tak för att säkerställa
+            att du som kund får den mest optimala anläggningen utifrån dina behov och förutsättningar </p>
+          <button id="readM1" class="readMore">Läs mer...</button>
+        </div>
+      </div>
+    </div>
+    <div class="row kontakt">
+      <div class="col-3 col-sm-3 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <img src="./images/icons/oferta.png" id="kontakt">
+        </div>
+      </div>
+      <div class="col-9 col-sm-9 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <h1>Offert</h1>
+        </div>
+        <div>
+          <p>Därefter får ni inom några dagar en offert via mail som ni i lugn och ro kan ta</p>
+          <p id="knkParagraph2" class="knkParagraph"> ställning till i ert hushåll. När ni väl godkänt offerten och vi
+            kommit överens om vilka produkter du ska ha i din anläggning, så påbörjas arbetet. Vi hjälper er med
+            föranmälan till nätägaren. </p>
+          <button id="readM2" class="readMore">Läs mer...</button>
+        </div>
+      </div>
+    </div>
+    <div class="row kontakt">
+      <div class="col-3 col-sm-3 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <img src="./images/icons/montimi.png" id="kontakt">
+        </div>
+      </div>
+      <div class="col-9 col-sm-9 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <h1>Montering och installation</h1>
+        </div>
+        <div>
+          <p>Vanligtvis tar det två till tre dagar tills vi är klara med</p>
+          <p id="knkParagraph3" class="knkParagraph"> montering och installation. Det som återstår är att vi kopplar din
+            mobila enhet till växelriktaren så att du kan följa din produktion i realtid. </p>
+          <button id="readM3" class="readMore">Läs mer...</button>
+        </div>
+      </div>
+    </div>
+    <div class="row kontakt">
+      <div class="col-3 col-sm-3 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <img src="./images/icons/dorzimi.png" id="kontakt">
+        </div>
+      </div>
+      <div class="col-9 col-sm-9 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <h1>Överlämning</h1>
+        </div>
+        <div>
+          <p>Då var det dags för en grundlig genomgång</p>
+          <p id="knkParagraph4" class="knkParagraph"> av din nya anläggning samt överlämning av nödvändig dokumentation.
+            Vi hjälper er med efteranmälan till din nätägare som sedan kommer och byter ut elmätaren. </p>
+          <button id="readM4" class="readMore">Läs mer...</button>
+        </div>
+      </div>
+    </div>
+    <div class="row kontakt">
+      <div class="col-3 col-sm-3 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <img src="./images/icons/kontakt1.png" id="kontakt">
+        </div>
+      </div>
+      <div class="col-9 col-sm-9 col-md-6 col-lg-6 col-xl-6  ">
+        <div>
+          <h1>Support</h1>
+        </div>
+        <div>
+          <p>Vi finns alltid tillgängliga för dig,</p>
+          <p id="knkParagraph5" class="knkParagraph"> om du skulle behöva oss. Det går att nå oss måndag - fredag mellan
+            8:00 - 18:00 </p>
+          <button id="readM5" class="readMore">Läs mer...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="ourProduct col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" data-aos="fade-left">
+        <h1 id="ourProduct">Våra produkter</h1>
+      </div>
+      <div class="products">
+        <div class="productOne" id="productOne">
+          <div class="solarPanel">
+            <div>
+              <img id="imageSolarP" src="./images/slider/vila2.JPG" alt="">
+            </div>
+          </div>
+          <div class="bottomProduct">
+            <div>
+              <h1 id="textPanel">
+                <a href="./product.html">Solceller</a>
+              </h1>
+            </div>
+            <div>
+              <a href="./product.html">
+                <img id="plusIcon" src="./images/icons/plus2.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="productOne">
+          <div class="solarPanel">
+            <div>
+              <img id="imageSolarP" src="./images/slider/laddboxar.jpg" alt="">
+            </div>
+          </div>
+          <div class="bottomProduct">
+            <div>
+              <h1 id="textPanel">
+                <a href="./product.html">Laddboxar</a>
+              </h1>
+            </div>
+            <div>
+              <a href="./product.html">
+                <img id="plusIcon" src="./images/icons/plus2.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="productOne">
+          <div class="solarPanel">
+            <div>
+              <img id="imageSolarP" src="./images/slider/bateri .png" alt="">
+            </div>
+          </div>
+          <div class="bottomProduct">
+            <div>
+              <h1 id="textPanel">
+                <a href="./product.html">Batterier</a>
+              </h1>
+            </div>
+            <div>
+              <a href="./product.html">
+                <img id="plusIcon" src="./images/icons/plus2.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- slide -->
+  <div class="container slide-container">
+    <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+        chevron_left
+      </button>
+      <ul class="image-list">
+        <img class="image-item" src="./images/slider/phonosolar1.png" alt="img-1" />
+        <img class="image-item" src="./images/slider/denim.jpg" alt="img-2" />
+        <img class="image-item" src="./images/slider/dasdasdasd.png" alt="img-3" />
+        <img class="image-item" src="./images/slider/sma.jpg" alt="img-4" />
+        <img class="image-item" src="./images/slider/dzdsffdssfdsdfs.jpg" alt="img-5" />
+        <img class="image-item" src="./images/slider/longiSolar1.jpg" alt="img-6" />
+        <img class="image-item" src="./images/slider//afore.jpg" alt="img-7" />
+        <img class="image-item" src="./images/slider/lg.jpg" alt="img-8" />
+        <img class="image-item" src="./images/slider/bluesun.jpg" alt="img-9" />
+        
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+        chevron_right
+      </button>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  <div class="container-fluid process">
+    <div class="row proccesWork">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+        <div class="processTxt">
+          <div>
+            <h1>Våra tjänster</h1>
+          </div>
+          <div>
+            <h3>Helhetslösningar av solsystem hos privatpersoner, bostadsrättsföreningar och företag </h3>
+            <p>Vi erbjuder totalentreprenad av solpaneler inklusive billaddare och batterier, för dig som privatperson,
+              bostadsrättsföreningar samt företag. Kontakta oss redan idag</p>
+            <button id="calcBut1"><a href="./services.html"> Våra tjänster</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="conatiner-fluid  ">
+    <div class="row " id="aboutus">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+        <div class="img-aboutus">
+          <img src="./images/aboutus.JPG" alt="">
+        </div>
+
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+        <div class="lefttMain-product2">
+          <h1>Om oss</h1>
+          <p>Vi anser oss vara ett familjärt företag och tillsammans med den expertis och kunskap som vi inom företag
+            innehar, skapar vi ett vinnande koncept där vår långa erfarenhet av montage och installation har gett våra
+            kunder en säker och effektiv anläggning.</p>
+          <button class="btn-contactAB" id="scrollBtn" role="button"><a href="./aboutus.html">Läs mer...</a></button>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="custom-shape-divider-bottom-1696873531">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+        opacity=".25" class="shape-fill"></path>
+      <path
+        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+        opacity=".5" class="shape-fill"></path>
+      <path
+        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
+
+  <div class="container-fluid footer ">
+    <div class="row logo-footer">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+        <img src="./images/logo1.jpg" id="img-footer" alt="">
+      </div>
+
+    </div>
+
+    <div class="row nav-footer">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+        <div class="nav-menu-3">
+          <ul class="menu nav-menu2">
+            <li class="menu-item current-menu-item">
+              <a class="nav__link" href="./index27.html">Hem</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a class="nav__link" href="./product.html">Produkter</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a class="nav__link" href="./services.html">Våra tjänster</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a class="nav__link" href="./aboutus.html">Om oss</a>
+            </li>
+            <li class="menu-item ">
+              <a class="nav__link " href="./kalkulator.html">Kontakta oss</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="row knk-footer">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+        <div class="knk-txt">
+        <p id="p1">Kontaktinformation</p>
+        <p>info@sydvastmontage.se</p>
+        <p>070 - 713 24 92</p>
+        <p>070 - 779 61 80</p>
+        
+        <p>Copyright © 2023. All Rights Reserved.  </p>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
 
 
 
 
-    <script>
-      $(document).ready(function() {
-        // Toggle menu on click
-        $("#menu-toggler").click(function() {
-          toggleBodyClass("menu-active");
-        });
-      
-        function toggleBodyClass(className) {
-          document.body.classList.toggle(className);
-        }
-      
-       });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-    crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="./app.js"></script>
+  <script src="./slider.js"></script>
+  <script src="./contact.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Toggle menu on click
+      $("#menu-toggler").click(function () {
+        toggleBodyClass("menu-active");
+      });
+
+      function toggleBodyClass(className) {
+        document.body.classList.toggle(className);
+      }
+    });
+  </script>
 </body>
+
 </html>

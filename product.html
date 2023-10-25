@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydvastmontage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Libre+Baskerville:wght@700&family=Rajdhani:wght@500&family=Roboto+Flex:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div>
+        <img id="bg-video" src="./images/bg-product.jpg" width="500" autoplay muted>
+    </div>
+    <nav class="navbar">
+        <div id="logo">
+          <img id="logo1" src="./images/logo1.jpg" alt="LOGO">
+        </div>
+        <div class="push-left">
+          <button id="menu-toggler" data-class="menu-active" class="hamburger">
+            <span class="hamburger-line hamburger-line-top"></span>
+            <span class="hamburger-line hamburger-line-middle"></span>
+            <span class="hamburger-line hamburger-line-bottom"></span>
+          </button>
+          <!--  Menu compatible with wp_nav_menu  -->
+        </div>
+        <div class="nav-menu-1">
+          <ul id="primary-menu" class="menu nav-menu">
+            <li class="menu-item current-menu-item">
+              <a class="nav__link" href="./index.html">Hem</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a class="nav__link" href="./product.html">Produkter</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a class="nav__link" href="./services.html">Våra tjänster</a>
+            </li>
+            <li class="menu-item dropdown">
+              <a class="nav__link" href="./aboutus.html">Om oss</a>
+            </li>
+            <li class="menu-item ">
+              <a class="nav__link " href="./contact.html">Kontakta oss</a>
+            </li>
+          </ul>
+        </div>
+        <div class="kalkylator">
+          <button class="kalk-btn"><a href="./kalkulator.html">Boka konsultation</a> </button>
+        </div>
+      </nav>
+
+
+    <div class="conatiner-fluid ">
+        <div class="row product1">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product">
+                    <h1>Lära känna våra produkter</h1>
+                    
+                    <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler1">Scrolla nedåt</a></button>
+
+
+                    
+                    
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="">
+                <div class="mainSlider">
+                    <img src="./images/baterilarger.png" class="slides" id="bateri" style="display: none">
+                    <img src="./images/chargingBox.png" class="slides" id="chargin" style="display: none">
+                    <img src="./images/solarPark.png" class="slides" id="solarP" style="display: none">
+                </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="conatiner-fluid " id="solceler1">
+        <div class="row " id="solceler">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product1">
+                   <h1>Villa</h1>
+                   <p>Vi som företag strävar alltid efter att du som kund ska känna total trygghet i din långsiktiga investering. Därför använder vi endast utvalda produkter av ledande producenter som har mångåriga garantier.  Du ska ha total kontroll och vara stressfri över anläggningen efter att panelerna är på ditt tak och producerar din el. Du får 20% skattereduktion (grön teknik) direkt på fakturan för materialet och arbetet.</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler2">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-vila">
+                <img src="./images/slider/villa.jpg"  alt="">
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="conatiner-fluid  ">
+        <div class="row " id="solceler2">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-company">
+                <img src="./images/slider/companySol.jpg"  alt="">
+               </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product2">
+                   <h1>Bostadsrätt</h1>
+                   <p>Vi hjälper er bostadsrättsföreningar att sänka sina kostnader till era medlemmar och samtidigt främja en grönare framtid. Kontakta oss för mer information om förutsättningarna för er fastighet.</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler3">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="conatiner-fluid " id="solceler1">
+        <div class="row " id="solceler3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product1">
+                   <h1>Lantbruk</h1>
+                   <p>Du som lantbrukare har flera fördelar med att installera solpaneler och elektrifiera ditt lantbruk. Du minskar din miljöpåverkan men framförallt blir du mindre beroende av elnätet. Kontakta oss för mer information om förutsättningarna för ert lantbruk.</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler4">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-vila">
+                <img src="./images/slider/natureSolar.jpg"  alt="">
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="conatiner-fluid  ">
+        <div class="row " id="solceler4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-company">
+                <img src="./images/slider/foretag.jpg"  alt="">
+               </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product2">
+                   <h1>Företag</h1>
+                   <p>Du som företag minskar dina kostnader och därmed ökar din lönsamhet samtidigt som du har en mindre miljöpåverkan. Företag som väljer att installera solpaneler är både hållbara och attraktiva. Kontakta oss för mer information om förutsättningarna för en skräddarsydd anläggning för just ditt företag</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler5">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="conatiner-fluid " id="solceler1">
+        <div class="row " id="solceler5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product1">
+                   <h1>Markanläggning</h1>
+                   <p>Har du en tomt som kan utnyttjas och bli en effektfull anläggning till både dig och dina grannar? Kontakta oss så går vi tillsammans igenom förutsättningarna för just din tomt.</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler4">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-vila">
+                <img src="./images/slider/plantLand.jpg"  alt="">
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="conatiner-fluid  ">
+        <div class="row " id="solceler4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-company">
+                <img src="./images/slider/laddboxar.jpg"  alt="">
+               </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product2">
+                   <h1>Laddboxar</h1>
+                   <p> Anledningen till att vi erbjuder laddboxar är för att du som kund får ett paketpris, vilket innebär att du får både din solanläggning och laddbox till ett lägre pris. Dessutom har du som kund 50% skattereduktion (grönt teknik avdrag) på laddboxen och arbetet. Varför inte utnyttja din egenproducerade el till att köra din elbil?</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler5">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="conatiner-fluid " id="solceler1">
+        <div class="row " id="solceler5">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="lefttMain-product1">
+                   <h1>Batterier</h1>
+                   <p> Precis som med laddboxar så har du som kund 50% skattereduktion (grön teknik) direkt på fakturan. Skulle ni vilja ha ett batteri till er anläggning så har vi möjlighet att erbjuda er ett schysst paketpris tillsammans med solpanelerna och laddboxen.</p>
+                   <!-- <button class="btn-contactAB" id="scrollBtn" role="button"><a href="#solceler4">Scroll Down</a></button> -->
+                    
+                    
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                <div class="img-vila">
+                <img src="./images/slider/bateri .png"  alt="">
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-shape-divider-bottom-1696873531">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill"></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill"></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    
+      <div class="container-fluid footer ">
+        <div class="row logo-footer">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <img src="./images/logo1.jpg" id="img-footer" alt="">
+          </div>
+    
+        </div>
+    
+        <div class="row nav-footer">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div class="nav-menu-3">
+              <ul class="menu nav-menu2">
+                <li class="menu-item current-menu-item">
+                  <a class="nav__link" href="./index27.html">Hem</a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a class="nav__link" href="./product.html">Produkter</a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a class="nav__link" href="./services.html">Våra tjänster</a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a class="nav__link" href="./aboutus.html">Om oss</a>
+                </li>
+                <li class="menu-item ">
+                  <a class="nav__link " href="./kalkulator.html">Kontakta oss</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+        <div class="row knk-footer">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div class="knk-txt">
+            <p id="p1">Kontaktinformation</p>
+            <p>info@sydvastmontage.se</p>
+            <p>070 - 713 24 92</p>
+            <p>070 - 779 61 80</p>
+            
+            <p>Copyright © 2023. All Rights Reserved.  </p>
+          </div>
+        </div>
+    
+        </div>
+    
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="./app.js"></script>
+    <script src="./slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Toggle menu on click
+            $("#menu-toggler").click(function () {
+                toggleBodyClass("menu-active");
+            });
+
+            function toggleBodyClass(className) {
+                document.body.classList.toggle(className);
+            }
+
+        });
+    </script>
+</body>
+
+</html>
